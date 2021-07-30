@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spot Prices</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="title">Crypto Spot Prices</h1>
+    <h4>Powered by: <img src="https://www.covalenthq.com/static/images/covalent-logo.png" alt="Covalent Logo" class="covalent">
+        <label class="switch">
+            <input type="checkbox" id="toggle">
+            <span class="slider round"></span>
+        </label>
+    </h4>
+    <p id="empty-warning"></p>
+    <div id="moreToken" class="hidden">
+        <label for="new-token">Add A New Token:</label>
+        <input type="search" id="new-token" name="new-token">
+        <button id="addButton">Add</button>
+        <br/>
+        <br/>
+        <label for="old-token">Remove An Existing Token:</label>
+        <input type="search" id="old-token" name="old-token">
+        <button id="removeButton">Remove</button>
+        <p id="clear">Clear All Tokens</p>
+    </div>
+    <table id="tokenTable" class="hidden">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Token</th>
+                <th>Symbol</th>
+                <th>Fiat Value</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
